@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category>
+    <pattern>Boa *</pattern>
+    <template>
+        Olá, bem vindo ao restaurante A+, Qual o seu nome?
+    </template>
+  </category>
+  
+  <category>
+    <pattern>Bom *</pattern>
+    <template>
+        Olá, bem vindo ao restaurante A+, Qual o seu nome?
+    </template>
+  </category>
+  
+  
+<category>
+    <pattern>Eu sou o *</pattern>
+    <template>
+       Bem vindo <set name ="username"> <star/>!</set> Como posso te ajudar hoje?
+       
+        <ol>
+            <li>Cardápio</li>
+            <li>Promoções do dia</li>
+            <li>Falar com um atendente</li>
+            <li>Sair</li>
+        </ol>
+    </template>
+ </category>
+  
+  
+ <category>
+    <pattern>1</pattern>
+      <template>
+        Muito bem, veja o cardápio abaixo!,<br></br><br></br>
+      
+        <image>https://i.ibb.co/NrdBwY8/download.png</image>
+        <image>https://i.ibb.co/y4Qtc1h/Screenshot-1.png</image>
+        <image>https://i.ibb.co/kJDMY9J/Screenshot-2.png</image>
+        <image>https://i.ibb.co/SRcpFZH/Screenshot-3.png</image>
+        <image>https://i.ibb.co/WPL2pwL/Screenshot-4.png</image>
+        <image>https://i.ibb.co/WByfmRd/Screenshot-5.png</image>
+        
+        Você deseja falar com o atendente para realizar o seu pedido?
+      </template>
+ </category>
+  
+<category>
+  <pattern>Sim</pattern>
+      <template>Muito bem, estamos te transferindo para um atendente!</template>
+ </category>
+ 
+ <category>
+  <pattern>2</pattern>
+    <template>
+        PROMOÇÕES ABAIXO<br></br><br></br>
+        
+        Promoção somente para ENTREGAS ou RETIRADAS no balcão:<br></br><br></br>
+        
+        Opção 1:<br></br>
+        Fettuccine<br></br>
+        Por R$ 30,00<br></br>
+        SERVE 2 PESSOAS <br></br><br></br>
+        
+        
+        Opção 2:<br></br>
+        Batata assada A+ + 1 suco de laranja 300 ml <br></br>
+        Por R$31,00<br></br>
+        SERVE 2 PESSOAS <br></br><br></br>
+        
+        Opção 3:<br></br>
+        Pizza 8 fatias tamanho GG escolha até 02 sabores: BACON / CALABRESA / PRESUNTO/FRANGO COM CATUPIRY/ MISTA/ MUSSARELA / BANANA/ MARGUERITA.<br></br>
+        Por R$ 45,00<br></br><br></br>
+        
+        Opção 4:<br></br>
+        Espeto de Contra Filé 2 PESSOAS + 1 guaraná de 1,5 + Acompanhamentos<br></br>
+        Por R$ 111,90<br></br>
+        Espeto de Contra Filé 4 PESSOAS  + 1 Coca cola 1,5 + Acompanhamentos<br></br>
+        Por R$ 146,90<br></br><br></br>
+        
+        
+        Opção 5:<br></br>
+        Espeto Picanha suína 2 PESSOAS + 1 guaraná de 1,5 + Acompanhamentos<br></br>
+        Por R$ 86,90<br></br>
+        Espeto Picanha suína 4 PESSOAS  + 1 Coca cola 1,5 + Acompanhamentos<br></br>
+        Por R$ 106,90<br></br><br></br>
+        
+        
+        Opção 6:<br></br>
+        Supremo de Porco PRA 2 PESSOAS + guaraná de 1,5 <br></br>
+        Por R$ 55,90<br></br>
+        Supremo de porco PRA 4 PESSOAS + Coca cola de 1,5 <br></br>
+        Por R$ 79,90<br></br><br></br>
+
+        <br></br><br></br>Você deseja falar com o atendente para realizar o seu pedido?
+    </template>
+  </category>
+ 
+ <category>
+    <pattern>3</pattern>
+      <template>Muito bem, estamos te transferindo para um atendente!</template>
+ </category>
+ 
+   <category>
+    <pattern>4</pattern>
+      <template>Agradecemos o contato, <get name ="username"></get> Tenha uma boa noite!</template>
+ </category>
+</aiml>
